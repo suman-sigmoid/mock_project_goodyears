@@ -32,6 +32,8 @@ order by customer_age ;
 
 -- query e 
 
+select FLOOR((YEAR(CURRENT_DATE()) - year_of_birth)) AS customer_age,week_number,value_segment,SUM(revenue_usd) AS total_revenue from query_perform group by customer_age,week_number,value_segment
+order by customer_age,week_number,value_segment ;
 
 -- query f 
 
