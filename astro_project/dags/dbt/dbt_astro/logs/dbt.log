@@ -1,0 +1,334 @@
+
+
+============================== 2023-07-25 08:14:57.844508 | b67f63f1-d825-4115-a445-bc5bd2e94439 ==============================
+[0m08:14:57.844525 [info ] [MainThread]: Running with dbt=1.2.1
+[0m08:14:57.844986 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/suman_choudhary1/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:14:57.845169 [debug] [MainThread]: Tracking: tracking
+[0m08:14:57.845447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1252cf280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1252cf790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1252cff70>]}
+[0m08:14:57.856566 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m08:14:57.856774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b67f63f1-d825-4115-a445-bc5bd2e94439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12531abb0>]}
+[0m08:14:58.075839 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m08:14:58.077207 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m08:14:58.106483 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+[0m08:14:58.108623 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+[0m08:14:58.111508 [debug] [MainThread]: Parsing macros/materializations/view.sql
+[0m08:14:58.112214 [debug] [MainThread]: Parsing macros/materializations/table.sql
+[0m08:14:58.114184 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+[0m08:14:58.118992 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+[0m08:14:58.119477 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m08:14:58.119770 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m08:14:58.120108 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m08:14:58.120372 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m08:14:58.120605 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m08:14:58.122543 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m08:14:58.123702 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m08:14:58.124561 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m08:14:58.132783 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m08:14:58.139865 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m08:14:58.146238 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m08:14:58.148491 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m08:14:58.149392 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m08:14:58.150267 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m08:14:58.152364 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m08:14:58.160956 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m08:14:58.161724 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m08:14:58.166274 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m08:14:58.173840 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m08:14:58.176392 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m08:14:58.177676 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m08:14:58.180172 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m08:14:58.180832 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m08:14:58.182372 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m08:14:58.183421 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m08:14:58.186650 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m08:14:58.195461 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m08:14:58.196122 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m08:14:58.197215 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m08:14:58.197902 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m08:14:58.198301 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m08:14:58.198658 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m08:14:58.198963 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m08:14:58.199644 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m08:14:58.201840 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m08:14:58.206116 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m08:14:58.206549 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m08:14:58.207139 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m08:14:58.207641 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m08:14:58.208093 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m08:14:58.208680 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m08:14:58.209060 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m08:14:58.209553 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m08:14:58.210332 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m08:14:58.211629 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m08:14:58.212247 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m08:14:58.212791 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m08:14:58.213297 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m08:14:58.213776 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m08:14:58.214196 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m08:14:58.214692 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m08:14:58.215109 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m08:14:58.217803 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m08:14:58.218233 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m08:14:58.219027 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m08:14:58.219959 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m08:14:58.220418 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m08:14:58.221419 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m08:14:58.222591 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m08:14:58.229454 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m08:14:58.230764 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m08:14:58.237100 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m08:14:58.239229 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m08:14:58.242664 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m08:14:58.247356 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m08:14:58.364690 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m08:14:58.371356 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m08:14:58.389888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b67f63f1-d825-4115-a445-bc5bd2e94439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1262332b0>]}
+[0m08:14:58.393794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b67f63f1-d825-4115-a445-bc5bd2e94439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12531a070>]}
+[0m08:14:58.394042 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 267 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m08:14:58.394216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b67f63f1-d825-4115-a445-bc5bd2e94439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1252e3370>]}
+[0m08:14:58.395055 [info ] [MainThread]: 
+[0m08:14:58.395509 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m08:14:58.396107 [debug] [ThreadPool]: Acquiring new snowflake connection "list_mock_project"
+[0m08:14:58.403442 [debug] [ThreadPool]: Using snowflake connection "list_mock_project"
+[0m08:14:58.403655 [debug] [ThreadPool]: On list_mock_project: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "dbt_astro", "target_name": "dev", "connection_name": "list_mock_project"} */
+show terse schemas in database mock_project
+    limit 10000
+[0m08:14:58.403741 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:15:01.506770 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.1 seconds
+[0m08:15:01.508528 [debug] [ThreadPool]: On list_mock_project: Close
+[0m08:15:02.534589 [debug] [ThreadPool]: Acquiring new snowflake connection "list_mock_project_curated"
+[0m08:15:02.538160 [debug] [ThreadPool]: Using snowflake connection "list_mock_project_curated"
+[0m08:15:02.538274 [debug] [ThreadPool]: On list_mock_project_curated: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "dbt_astro", "target_name": "dev", "connection_name": "list_mock_project_curated"} */
+show terse objects in mock_project.curated
+[0m08:15:02.538352 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:16:04.690422 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 62.15 seconds
+[0m08:16:04.691753 [debug] [ThreadPool]: On list_mock_project_curated: Close
+[0m08:16:05.920011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b67f63f1-d825-4115-a445-bc5bd2e94439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126262370>]}
+[0m08:16:05.920433 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:16:05.920581 [info ] [MainThread]: 
+[0m08:16:05.949823 [debug] [Thread-1  ]: Began running node model.dbt_astro.my_first_dbt_model
+[0m08:16:05.950055 [info ] [Thread-1  ]: 1 of 2 START table model curated.my_first_dbt_model ............................ [RUN]
+[0m08:16:05.950428 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.dbt_astro.my_first_dbt_model"
+[0m08:16:05.950518 [debug] [Thread-1  ]: Began compiling node model.dbt_astro.my_first_dbt_model
+[0m08:16:05.950606 [debug] [Thread-1  ]: Compiling model.dbt_astro.my_first_dbt_model
+[0m08:16:05.952145 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_astro.my_first_dbt_model"
+[0m08:16:05.953153 [debug] [Thread-1  ]: finished collecting timing info
+[0m08:16:05.953271 [debug] [Thread-1  ]: Began executing node model.dbt_astro.my_first_dbt_model
+[0m08:16:05.967751 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_astro.my_first_dbt_model"
+[0m08:16:05.969283 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_astro.my_first_dbt_model"
+[0m08:16:05.969387 [debug] [Thread-1  ]: On model.dbt_astro.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "dbt_astro", "target_name": "dev", "node_id": "model.dbt_astro.my_first_dbt_model"} */
+create or replace transient table mock_project.curated.my_first_dbt_model  as
+      (--
+
+--select 1 as name
+-- where id is not null
+create or replace  table rev1_staged (msisdn varchar,week_number int, revenue_usd float)
+
+--INSERT INTO rev1_staged
+--SELECT DISTINCT *
+--FROM raw.rev1
+--WHERE msisdn IS NOT NULL or week_number is not null or revenue_used is not null;
+      );
+[0m08:16:05.969473 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:18:08.167487 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01addbd2-0404-ae3b-0000-00795807f061
+[0m08:18:08.168369 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 6 at position 0 unexpected 'create'.
+syntax error line 12 at position 6 unexpected ')'.
+[0m08:18:08.168824 [debug] [Thread-1  ]: finished collecting timing info
+[0m08:18:08.169109 [debug] [Thread-1  ]: On model.dbt_astro.my_first_dbt_model: Close
+[0m08:18:09.354156 [debug] [Thread-1  ]: Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 0 unexpected 'create'.
+  syntax error line 12 at position 6 unexpected ')'.
+  compiled SQL at target/run/dbt_astro/models/example/my_first_dbt_model.sql
+[0m08:18:09.354557 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b67f63f1-d825-4115-a445-bc5bd2e94439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1266f8070>]}
+[0m08:18:09.354779 [error] [Thread-1  ]: 1 of 2 ERROR creating table model curated.my_first_dbt_model ................... [[31mERROR[0m in 123.40s]
+[0m08:18:09.355013 [debug] [Thread-1  ]: Finished running node model.dbt_astro.my_first_dbt_model
+[0m08:18:09.355421 [debug] [Thread-1  ]: Began running node model.dbt_astro.my_second_dbt_model
+[0m08:18:09.355556 [info ] [Thread-1  ]: 2 of 2 SKIP relation curated.my_second_dbt_model ............................... [[33mSKIP[0m]
+[0m08:18:09.355722 [debug] [Thread-1  ]: Finished running node model.dbt_astro.my_second_dbt_model
+[0m08:18:09.356356 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m08:18:09.356645 [info ] [MainThread]: 
+[0m08:18:09.356778 [info ] [MainThread]: Finished running 2 table models in 0 hours 3 minutes and 10.96 seconds (190.96s).
+[0m08:18:09.356904 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:18:09.356973 [debug] [MainThread]: Connection 'model.dbt_astro.my_first_dbt_model' was properly closed.
+[0m08:18:09.361166 [info ] [MainThread]: 
+[0m08:18:09.361498 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m08:18:09.361659 [info ] [MainThread]: 
+[0m08:18:09.361783 [error] [MainThread]: [33mDatabase Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)[0m
+[0m08:18:09.361899 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m08:18:09.362003 [error] [MainThread]:   syntax error line 6 at position 0 unexpected 'create'.
+[0m08:18:09.362103 [error] [MainThread]:   syntax error line 12 at position 6 unexpected ')'.
+[0m08:18:09.362200 [error] [MainThread]:   compiled SQL at target/run/dbt_astro/models/example/my_first_dbt_model.sql
+[0m08:18:09.362303 [info ] [MainThread]: 
+[0m08:18:09.362404 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m08:18:09.362561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12627b8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126233130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12625b5e0>]}
+[0m08:18:09.362688 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-25 08:19:51.792090 | c168db8b-4d17-48b5-a7db-a971607f3be1 ==============================
+[0m08:19:51.792131 [info ] [MainThread]: Running with dbt=1.2.1
+[0m08:19:51.792715 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/suman_choudhary1/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:19:51.792840 [debug] [MainThread]: Tracking: tracking
+[0m08:19:51.793044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124591550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124591dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124591490>]}
+[0m08:19:51.830390 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:19:51.830672 [debug] [MainThread]: Partial parsing: updated file: dbt_astro://models/example/my_first_dbt_model.sql
+[0m08:19:51.838795 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m08:19:51.849300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c168db8b-4d17-48b5-a7db-a971607f3be1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1247260d0>]}
+[0m08:19:51.852773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c168db8b-4d17-48b5-a7db-a971607f3be1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1246c4e50>]}
+[0m08:19:51.852930 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 267 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m08:19:51.853064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c168db8b-4d17-48b5-a7db-a971607f3be1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060f1df0>]}
+[0m08:19:51.853649 [info ] [MainThread]: 
+[0m08:19:51.853939 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m08:19:51.854370 [debug] [ThreadPool]: Acquiring new snowflake connection "list_mock_project"
+[0m08:19:51.860968 [debug] [ThreadPool]: Using snowflake connection "list_mock_project"
+[0m08:19:51.861115 [debug] [ThreadPool]: On list_mock_project: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "dbt_astro", "target_name": "dev", "connection_name": "list_mock_project"} */
+show terse schemas in database mock_project
+    limit 10000
+[0m08:19:51.861191 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:21:55.948470 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 124.09 seconds
+[0m08:21:55.952450 [debug] [ThreadPool]: On list_mock_project: Close
+[0m08:21:57.051794 [debug] [ThreadPool]: Acquiring new snowflake connection "list_mock_project_curated"
+[0m08:21:57.066289 [debug] [ThreadPool]: Using snowflake connection "list_mock_project_curated"
+[0m08:21:57.067026 [debug] [ThreadPool]: On list_mock_project_curated: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "dbt_astro", "target_name": "dev", "connection_name": "list_mock_project_curated"} */
+show terse objects in mock_project.curated
+[0m08:21:57.067412 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:25:00.000317 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 182.93 seconds
+[0m08:25:00.004402 [debug] [ThreadPool]: On list_mock_project_curated: Close
+[0m08:25:01.033082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c168db8b-4d17-48b5-a7db-a971607f3be1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1245a3400>]}
+[0m08:25:01.034127 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:25:01.034588 [info ] [MainThread]: 
+[0m08:25:01.039692 [debug] [Thread-1  ]: Began running node model.dbt_astro.my_first_dbt_model
+[0m08:25:01.039956 [info ] [Thread-1  ]: 1 of 2 START table model curated.my_first_dbt_model ............................ [RUN]
+[0m08:25:01.040337 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.dbt_astro.my_first_dbt_model"
+[0m08:25:01.040430 [debug] [Thread-1  ]: Began compiling node model.dbt_astro.my_first_dbt_model
+[0m08:25:01.040535 [debug] [Thread-1  ]: Compiling model.dbt_astro.my_first_dbt_model
+[0m08:25:01.042065 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_astro.my_first_dbt_model"
+[0m08:25:01.042534 [debug] [Thread-1  ]: finished collecting timing info
+[0m08:25:01.042636 [debug] [Thread-1  ]: Began executing node model.dbt_astro.my_first_dbt_model
+[0m08:25:01.060571 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_astro.my_first_dbt_model"
+[0m08:25:01.061520 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_astro.my_first_dbt_model"
+[0m08:25:01.061620 [debug] [Thread-1  ]: On model.dbt_astro.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "dbt_astro", "target_name": "dev", "node_id": "model.dbt_astro.my_first_dbt_model"} */
+create or replace transient table mock_project.curated.my_first_dbt_model  as
+      (--
+
+--select 1 as name
+-- where id is not null
+create or replace  table rev1_staged (msisdn varchar,week_number int, revenue_usd float);
+[0m08:25:01.061692 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:26:03.126025 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01addbda-0404-ae3b-0000-00795807f069
+[0m08:26:03.126318 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 6 at position 0 unexpected 'create'.
+[0m08:26:03.126478 [debug] [Thread-1  ]: finished collecting timing info
+[0m08:26:03.126580 [debug] [Thread-1  ]: On model.dbt_astro.my_first_dbt_model: Close
+[0m08:26:04.317635 [debug] [Thread-1  ]: Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 0 unexpected 'create'.
+  compiled SQL at target/run/dbt_astro/models/example/my_first_dbt_model.sql
+[0m08:26:04.318372 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c168db8b-4d17-48b5-a7db-a971607f3be1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1252b6730>]}
+[0m08:26:04.318892 [error] [Thread-1  ]: 1 of 2 ERROR creating table model curated.my_first_dbt_model ................... [[31mERROR[0m in 63.28s]
+[0m08:26:04.319536 [debug] [Thread-1  ]: Finished running node model.dbt_astro.my_first_dbt_model
+[0m08:26:04.320255 [debug] [Thread-1  ]: Began running node model.dbt_astro.my_second_dbt_model
+[0m08:26:04.320757 [info ] [Thread-1  ]: 2 of 2 SKIP relation curated.my_second_dbt_model ............................... [[33mSKIP[0m]
+[0m08:26:04.321139 [debug] [Thread-1  ]: Finished running node model.dbt_astro.my_second_dbt_model
+[0m08:26:04.321995 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m08:26:04.322453 [info ] [MainThread]: 
+[0m08:26:04.322717 [info ] [MainThread]: Finished running 2 table models in 0 hours 6 minutes and 12.47 seconds (372.47s).
+[0m08:26:04.322931 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:26:04.323046 [debug] [MainThread]: Connection 'model.dbt_astro.my_first_dbt_model' was properly closed.
+[0m08:26:04.328762 [info ] [MainThread]: 
+[0m08:26:04.329035 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m08:26:04.329264 [info ] [MainThread]: 
+[0m08:26:04.329454 [error] [MainThread]: [33mDatabase Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)[0m
+[0m08:26:04.329653 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m08:26:04.329826 [error] [MainThread]:   syntax error line 6 at position 0 unexpected 'create'.
+[0m08:26:04.329999 [error] [MainThread]:   compiled SQL at target/run/dbt_astro/models/example/my_first_dbt_model.sql
+[0m08:26:04.330183 [info ] [MainThread]: 
+[0m08:26:04.330365 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m08:26:04.330628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12524c9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12519c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124754fd0>]}
+[0m08:26:04.330847 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-07-25 08:30:45.578276 | c00aaca4-de2f-4ad0-b397-dd4a5a3b5837 ==============================
+[0m08:30:45.578316 [info ] [MainThread]: Running with dbt=1.2.1
+[0m08:30:45.578927 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/suman_choudhary1/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:30:45.579046 [debug] [MainThread]: Tracking: tracking
+[0m08:30:45.579231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126991610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126991cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126991220>]}
+[0m08:30:45.625169 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:30:45.625461 [debug] [MainThread]: Partial parsing: updated file: dbt_astro://models/example/my_first_dbt_model.sql
+[0m08:30:45.633835 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+[0m08:30:45.641183 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+[0m08:30:45.646014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c00aaca4-de2f-4ad0-b397-dd4a5a3b5837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126f700d0>]}
+[0m08:30:45.649024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c00aaca4-de2f-4ad0-b397-dd4a5a3b5837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126ec8e50>]}
+[0m08:30:45.649164 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 267 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m08:30:45.649294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c00aaca4-de2f-4ad0-b397-dd4a5a3b5837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adb9fd0>]}
+[0m08:30:45.649837 [info ] [MainThread]: 
+[0m08:30:45.650123 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m08:30:45.650542 [debug] [ThreadPool]: Acquiring new snowflake connection "list_mock_project"
+[0m08:30:45.656980 [debug] [ThreadPool]: Using snowflake connection "list_mock_project"
+[0m08:30:45.657100 [debug] [ThreadPool]: On list_mock_project: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "dbt_astro", "target_name": "dev", "connection_name": "list_mock_project"} */
+show terse schemas in database mock_project
+    limit 10000
+[0m08:30:45.657172 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:33:48.508059 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 182.85 seconds
+[0m08:33:48.512041 [debug] [ThreadPool]: On list_mock_project: Close
+[0m08:33:49.698057 [debug] [ThreadPool]: Acquiring new snowflake connection "list_mock_project_curated"
+[0m08:33:49.703076 [debug] [ThreadPool]: Using snowflake connection "list_mock_project_curated"
+[0m08:33:49.703276 [debug] [ThreadPool]: On list_mock_project_curated: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "dbt_astro", "target_name": "dev", "connection_name": "list_mock_project_curated"} */
+show terse objects in mock_project.curated
+[0m08:33:49.703355 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:33:51.777834 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.07 seconds
+[0m08:33:51.781918 [debug] [ThreadPool]: On list_mock_project_curated: Close
+[0m08:33:52.904107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c00aaca4-de2f-4ad0-b397-dd4a5a3b5837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126f75dc0>]}
+[0m08:33:52.904915 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:33:52.905225 [info ] [MainThread]: 
+[0m08:33:52.910502 [debug] [Thread-1  ]: Began running node model.dbt_astro.my_first_dbt_model
+[0m08:33:52.910869 [info ] [Thread-1  ]: 1 of 2 START table model curated.my_first_dbt_model ............................ [RUN]
+[0m08:33:52.911500 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.dbt_astro.my_first_dbt_model"
+[0m08:33:52.911661 [debug] [Thread-1  ]: Began compiling node model.dbt_astro.my_first_dbt_model
+[0m08:33:52.912129 [debug] [Thread-1  ]: Compiling model.dbt_astro.my_first_dbt_model
+[0m08:33:52.915376 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_astro.my_first_dbt_model"
+[0m08:33:52.916490 [debug] [Thread-1  ]: finished collecting timing info
+[0m08:33:52.916679 [debug] [Thread-1  ]: Began executing node model.dbt_astro.my_first_dbt_model
+[0m08:33:52.940344 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_astro.my_first_dbt_model"
+[0m08:33:52.941398 [debug] [Thread-1  ]: Using snowflake connection "model.dbt_astro.my_first_dbt_model"
+[0m08:33:52.941525 [debug] [Thread-1  ]: On model.dbt_astro.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "dbt_astro", "target_name": "dev", "node_id": "model.dbt_astro.my_first_dbt_model"} */
+create or replace transient table mock_project.curated.my_first_dbt_model  as
+      (--
+
+--select 1 as name
+-- where id is not null
+CREATE TABLE CURATED.REV1_STAGED
+(msisdn varchar,week_number NUMBER, revenue_usd float);
+[0m08:33:52.941622 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:35:55.156300 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01addbe3-0404-ae05-0000-00795807d1a9
+[0m08:35:55.156701 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 6 at position 0 unexpected 'CREATE'.
+[0m08:35:55.157052 [debug] [Thread-1  ]: finished collecting timing info
+[0m08:35:55.157283 [debug] [Thread-1  ]: On model.dbt_astro.my_first_dbt_model: Close
+[0m08:35:56.105250 [debug] [Thread-1  ]: Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 0 unexpected 'CREATE'.
+  compiled SQL at target/run/dbt_astro/models/example/my_first_dbt_model.sql
+[0m08:35:56.105971 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c00aaca4-de2f-4ad0-b397-dd4a5a3b5837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1274b1eb0>]}
+[0m08:35:56.106515 [error] [Thread-1  ]: 1 of 2 ERROR creating table model curated.my_first_dbt_model ................... [[31mERROR[0m in 123.19s]
+[0m08:35:56.107145 [debug] [Thread-1  ]: Finished running node model.dbt_astro.my_first_dbt_model
+[0m08:35:56.107895 [debug] [Thread-1  ]: Began running node model.dbt_astro.my_second_dbt_model
+[0m08:35:56.108192 [info ] [Thread-1  ]: 2 of 2 SKIP relation curated.my_second_dbt_model ............................... [[33mSKIP[0m]
+[0m08:35:56.108524 [debug] [Thread-1  ]: Finished running node model.dbt_astro.my_second_dbt_model
+[0m08:35:56.109329 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m08:35:56.109717 [info ] [MainThread]: 
+[0m08:35:56.109913 [info ] [MainThread]: Finished running 2 table models in 0 hours 5 minutes and 10.46 seconds (310.46s).
+[0m08:35:56.110104 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:35:56.110381 [debug] [MainThread]: Connection 'model.dbt_astro.my_first_dbt_model' was properly closed.
+[0m08:35:56.117102 [info ] [MainThread]: 
+[0m08:35:56.117355 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m08:35:56.117539 [info ] [MainThread]: 
+[0m08:35:56.117692 [error] [MainThread]: [33mDatabase Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)[0m
+[0m08:35:56.117840 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m08:35:56.117975 [error] [MainThread]:   syntax error line 6 at position 0 unexpected 'CREATE'.
+[0m08:35:56.118107 [error] [MainThread]:   compiled SQL at target/run/dbt_astro/models/example/my_first_dbt_model.sql
+[0m08:35:56.118245 [info ] [MainThread]: 
+[0m08:35:56.118386 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m08:35:56.118589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12698f4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126e57640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1274d99d0>]}
+[0m08:35:56.118760 [debug] [MainThread]: Flushing usage events

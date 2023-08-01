@@ -1,0 +1,14 @@
+dbt_astro:
+  target: dev
+  outputs:
+    dev:
+      account: dub78657.us-east-1
+      database: 'MOCK_PROJECT'
+      password: '@Suman123'
+      role: accountadmin
+      schema: 'CURATED'
+      threads: 1
+      type: snowflake
+      user: SU
+      warehouse: COMPUTE_WH
+
