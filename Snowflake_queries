@@ -1,1 +1,103 @@
 
+-- table creation using join -- 
+Create table query_perform  as select r.MSISDN,WEEK_NUMBER,revenue_usd,gender,year_of_birth,system_status,mobile_type,value_segment,IMEI_TAC,brand_name,model_name,os_name,os_vendor  from rev1_cleaned r JOIN crm1_cleaned c JOIN device1_cleaned d
+WHERE r.MSISDN = c.MSISDN AND r.MSISDN = d.MSISDN;
+select * from query_perform;
+
+
+--- queries 
+
+-- query a 
+SELECT week_number, COUNT(*) AS total_active_devices FROM query_perform
+WHERE system_status = 'ACTIVE' GROUP BY week_number ORDER BY week_number;
+SELECT week_number, COUNT(*) AS total_devices FROM query_perform
+GROUP BY week_number ORDER BY week_number;
+
+-- query b 
+select week_number, count(msisdn) as active_customers from query_perform where system_status = 'ACTIVE' group by week_number order by week_number;
+
+-- query c 
+
+select gender, week_number,SUM(revenue_usd)as total_revenue from query_perform group by gender,week_number order by gender, week_number;
+
+select gender,SUM(revenue_usd)as total_revenue from query_perform group by gender order by gender ;
+
+
+-- query d
+select FLOOR((YEAR(CURRENT_DATE()) - year_of_birth)) AS customer_age,week_number,SUM(revenue_usd) AS total_revenue from query_perform group by customer_age,week_number
+order by customer_age,week_number ;
+
+select FLOOR((YEAR(CURRENT_DATE()) - year_of_birth)) AS customer_age,SUM(revenue_usd) AS total_revenue from query_perform group by customer_age
+order by customer_age ;
+
+-- query e 
+
+
+-- query f 
+
+select mobile_type,week_number ,SUM(revenue_usd)as total_revenue from query_perform group by mobile_type,week_number order by mobile_type, week_number;
+
+select mobile_type, sum(revenue_usd) as total_revenue from query_perform group by mobile_type order by mobile_type;
+
+-- query g
+
+select brand_name,week_number ,SUM(revenue_usd)as total_revenue from query_perform group by brand_name,week_number order by brand_name, week_number;
+
+select brand_name, sum(revenue_usd) as total_revenue from query_perform group by brand_name order by brand_name;
+
+-- query h 
+
+select os_name,week_number ,SUM(revenue_usd)as total_revenue from query_perform group by os_name,week_number order by os_name, week_number;
+
+select os_name, sum(revenue_usd) as total_revenue from query_perform group by os_name order by os_name;
+
+-- query i 
+
+select os_vendor,week_number ,SUM(revenue_usd)as total_revenue from query_perform group by os_vendor,week_number order by os_vendor, week_number;
+
+select os_vendor, sum(revenue_usd) as total_revenue from query_perform group by os_vendor order by os_vendor;
+
+-- query j 
+select os_name,count(*) as total_customer_distribution_os_name from query_perform group by os_name order by os_name;
+select os_name,week_number,count(*) as total_customer_distribution_os_name from query_perform group by os_name,week_number order by os_name,week_number;
+
+-- query k 
+
+select brand_name,count(*) as total_customer_distribution_brand_name from query_perform group by brand_name order by brand_name;
+select brand_name,week_number,count(*) as total_customer_distribution_brand_name from query_perform group by brand_name,week_number order by brand_name,week_number;
+
+-- query l
+
+select mobile_type,count(*) as total_customer_distribution from query_perform group by mobile_type order by mobile_type;
+select mobile_type,week_number,count(*) as total_customer_distribution_mobile_type from query_perform group by mobile_type,week_number order by mobile_type,week_number;
+
+-- query m
+
+SELECT brand_name,week_number,MAX(revenue_usd) AS highest_revenue_by_BrandName
+FROM query_perform GROUP BY brand_name,week_number ORDER by brand_name,week_number;
+
+SELECT brand_name,week_number, MIN(revenue_usd) AS lowest_revenue_by_BrandName
+FROM query_perform GROUP BY brand_name,week_number ORDER BY brand_name, week_number;
+
+-- query n
+
+SELECT os_name,week_number,MAX(revenue_usd) AS highest_revenue_by_OSName
+FROM query_perform GROUP BY os_name,week_number ORDER by os_name,week_number;
+SELECT os_name,week_number, MIN(revenue_usd) AS lowest_revenue_by_OSName
+FROM query_perform GROUP BY os_name,week_number ORDER BY os_name, week_number;
+
+--query o
+select brand_name,count(*) as brand_customer
+from query_perform
+where (year(current_timestamp)-year_of_birth between 20 and 30)
+group by 1
+order by 2 desc;
+
+-- query p
+select os_name,count(*) as os_customer
+from query_perform
+where (year(current_timestamp)-year_of_birth between 20 and 30)
+group by 1
+order by 2 desc;
+
+
